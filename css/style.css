@@ -1,0 +1,44 @@
+body{
+    background-color: lightblue;
+}
+#items-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 30px; 
+}
+#error-message{
+    display: grid;
+    justify-content: center;
+    color: orangered;
+}
+.single-item{
+    background-color:whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+}
+.single-item img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width:100%;
+}
+.single-item h6{
+    padding: 20px;
+}
+#item-details-div{
+    display: grid;
+    justify-content: center;
+    margin-bottom: 100px;  
+}
+#item-details-div img{
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    margin-bottom: 30px;  
+}
+#item-details-div h5{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+
