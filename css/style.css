@@ -6,7 +6,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     grid-gap: 30px; 
 }
-#error-message{
+#error-div{
     display: grid;
     justify-content: center;
     color: orangered;

@@ -2,6 +2,7 @@
 //function for getting search result by user.
 const searchResult=()=>{
     const getSearchInput= document.getElementById('item-search').value;
+    document.getElementById('error-div').innerHTML='';
     if(getSearchInput!=''){
         //calling api for search items by name
         fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${getSearchInput}`)
@@ -14,10 +15,10 @@ const searchResult=()=>{
 //function to display alert  for invalid  item search
 const errorMessage= ()=>{
     alert('Opps! Invalid Item');
-    const itemsDiv= document.getElementById('items-div');
-    itemsDiv.id='error-message';
-    itemsDiv.innerHTML=`
-    <h4>Sorry! there is no such item available!<h4>
+
+    const errorDiv= document.getElementById('error-div');
+    errorDiv.innerHTML=`
+    <h4>Sorry! there is no such item available! try another one<h4>
     `;
     document.getElementById('item-search').value='';
 }
